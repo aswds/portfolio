@@ -1,0 +1,61 @@
+@import "../../styles/colors";
+@import "../../styles/fonts";
+.projects-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+
+.projects-title {
+  font-family: $montserrat;
+  font-size: 2rem;
+  margin: 0px;
+  font-weight: 600;
+  color: $primary-color;
+}
+.projects-description {
+  font-family: $montserrat;
+  font-weight: 300;
+  color: $secondary-text-color;
+}
+.project-list {
+  display: flex;
+  flex-direction: row;
+  gap: 5vh;
+  align-items: center;
+  justify-content: center; /* Center project cards horizontally */
+}
+
+.project-card {
+  background-color: #fff;
+  color: #000;
+  font-family: $montserrat;
+  width: 20vw;
+  height: 50vh;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.project-card-header {
+  padding: 10px;
+  border-radius: 20px;
+  color: $primary-color;
+}
+
+.primary-color-bg {
+  background-color: $primary-color;
+}
+
+.accent-color-bg {
+  background-color: $accent-color;
+}
+
+.project-card-body {
+  margin-top: 10px;
+}
+
+.project-card-body a {
+  color: $accent-color;
+  text-decoration: none;
+}

@@ -1,0 +1,47 @@
+@import "../../styles/colors";
+.introSection {
+  flex: 1;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+.introContainer {
+  margin: 0 auto;
+  display: inherit;
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.introText {
+}
+
+.introImage {
+}
+.technologies {
+  color: $secondary-text-color;
+}
+.introImage img {
+  height: auto;
+  border-radius: 6px;
+}
+
+.introHeading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: $text-color;
+  margin-bottom: 20px;
+}
+.highlight {
+  color: $primary-color;
+}
+.introDescription {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: $primary-color;
+  margin-bottom: 30px;
+}

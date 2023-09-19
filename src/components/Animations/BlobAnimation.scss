@@ -1,0 +1,70 @@
+@import "../../styles/colors";
+$blob-height: 250px;
+$blob-width: 250px;
+.blob-animation {
+  position: relative;
+  width: $blob-width;
+  height: $blob-height;
+  display: flex;
+  background-color: $primary-color;
+  border-radius: 50%;
+  animation: blob 30s infinite;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.blob-image-animation {
+  height: $blob-height - 50px;
+  width: $blob-width - 50px;
+  object-fit: cover;
+  overflow: hidden;
+  background-color: $primary-color;
+  animation: blob 38s infinite;
+}
+
+@keyframes blob {
+  0% {
+    border-radius: 60% 50% 80% 50%;
+  }
+
+  10% {
+    border-radius: 50% 60% 50% 50%;
+  }
+
+  20% {
+    border-radius: 60% 50% 50% 60%;
+  }
+
+  30% {
+    border-radius: 50% 50% 50% 60%;
+  }
+
+  40% {
+    border-radius: 50% 50% 60% 50%;
+  }
+
+  50% {
+    border-radius: 40% 60% 50% 50%;
+  }
+
+  60% {
+    border-radius: 60% 50% 45% 50%;
+  }
+
+  70% {
+    border-radius: 50% 50% 40% 60%;
+  }
+
+  80% {
+    border-radius: 50% 50% 60% 70%;
+  }
+
+  90% {
+    border-radius: 50% 60% 55% 50%;
+  }
+
+  100% {
+    border-radius: 60% 50% 80% 50%;
+  }
+}

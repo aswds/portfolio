@@ -1,0 +1,23 @@
+@import "../../../styles/colors";
+.link {
+  font-family: "Montserrat";
+  color: $text-color;
+  font-size: large;
+}
+
+.link-container {
+  display: flex;
+  padding: 0px 20px;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 80px;
+  border-radius: 20px;
+  &:hover {
+    box-shadow: 0px 2px 10px $primary-color;
+    transition: box-shadow 0.2s;
+  }
+  &::after {
+    background-color: transparent;
+    transition: background-color 0.4s;
+  }
+}

@@ -1,0 +1,55 @@
+@import "../../styles/_colors";
+.navbar {
+  background-color: transparent;
+  height: 60px;
+  top: 0;
+  transition: right 0.5s ease-in;
+  z-index: 999;
+}
+
+.navbarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.navbarBrand .logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbarMenu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbarItem {
+  margin-right: 20px;
+  display: inline;
+}
+
+.navbarLink {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: $text-color;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  border-width: 0px;
+  transition: background-color 0.3s ease;
+  background-color: transparent;
+  cursor: pointer;
+  &:hover {
+    color: $primary-hover;
+  }
+}

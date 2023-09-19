@@ -1,0 +1,28 @@
+.rectanglesContainer {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: flex-end;
+}
+.rectangular_left {
+  width: 0;
+  height: 0;
+  border-right: 50rem solid white;
+  border-top: 1rem solid transparent;
+  border-bottom: 2rem solid transparent;
+  transform: rotate(30deg) skew(-0deg, -5deg);
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+.rectangular_down {
+  width: 0;
+  height: 0;
+  border-right: 2rem solid white;
+  border-bottom: 20rem solid transparent;
+  transform: skew(-0deg, -10deg);
+  position: absolute;
+  left: 50%;
+  top: 0;
+}
