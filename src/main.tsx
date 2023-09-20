@@ -11,16 +11,16 @@ import App from "./App";
 import { ThemeProvider } from "@mui/material";
 import { theme } from "./theme/theme";
 
-const router = createBrowserRouter([
+const routes = [
   {
     path: "/",
     element: <App />,
   },
-  {
-    path: "about",
-    element: <div>About</div>,
-  },
-]);
+];
+
+const router = createBrowserRouter(routes, {
+  basename: import.meta.env.DEV ? "/" : "/portfolio",
+});
 
 createRoot(document.getElementById("root") as HTMLElement).render(
   <ThemeProvider theme={theme}>
