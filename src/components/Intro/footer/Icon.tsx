@@ -1,6 +1,7 @@
+import { IconType } from "react-icons/lib";
 import "./IntroFooter.scss";
 interface IconLinkProps {
-  Icon: JSX.Element;
+  Icon: IconType;
   iconSize: number;
   text: "LinkedIn" | "GitHub" | "Email";
   href: string;

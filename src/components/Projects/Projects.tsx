@@ -8,11 +8,11 @@ const ProjectsSection: React.FC = () => {
   const slidePX = 300;
   const sliderRight = () => {
     var slider = document.getElementById("slider");
-    slider.scrollLeft += slidePX;
+    slider!.scrollLeft += slidePX;
   };
   const sliderLeft = () => {
     var slider = document.getElementById("slider");
-    slider.scrollLeft -= slidePX;
+    slider!.scrollLeft -= slidePX;
   };
   return (
     <div className="projects-section">
